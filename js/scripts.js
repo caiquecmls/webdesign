@@ -21,7 +21,24 @@ var aboutUs = {
 var unseletected_color = "#646872";
 var seletected_color = "#2A2D34";
 
+var about_tags = document.getElementsByClassName("single-tab");
+console.log(about_tags);
 
+for (var i = 0; i < about_tags.length; i++) {
+  about_tags[i].onclick = function () {
+
+    for (var j = 0; j < about_tags.length; j++) {
+      about_tags[j].style['background-color'] = unseletected_color;
+      about_tags[j].style['font-weight'] = 'normal';
+    }
+
+    this.style['background-color'] = seletected_color;
+    this.style['font-weight'] = 'bold';
+
+    var selecionado = this.innerHTML;
+    document.getElementById("box-text").innerHTML = aboutUs[selecionado];
+  }
+}
 
 // Slider de serviços
 
