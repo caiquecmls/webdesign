@@ -1,6 +1,12 @@
 
 // Menu Mobile
+document.getElementById("hamburguer-icon").onclick = function () {
+  document.getElementById("sliding-header-menu-outer").style.right = "0";
+}
 
+document.getElementById("sliding-header-menu-close-button").onclick = function () {
+  document.getElementById("sliding-header-menu-outer").style.right = "-320px";
+}
 
 
 
@@ -34,7 +40,7 @@ var our_services = [
     'title': 'Marketing Digital',
     'text': 'Nunc et quam in magna vehicula sollicitudin. Aliquam erat volutpat. Maecenas dolor mi, aliquet ac quam aliquet, condimentum dictum nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus.'
   }
-  
+
 ];
 
 
@@ -42,8 +48,9 @@ var our_services = [
 
 
 
-  
-   
 
 
-   
+
+
+
+
