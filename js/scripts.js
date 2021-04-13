@@ -88,6 +88,11 @@ var next = document.getElementById("service-next").onclick = function () {
   servico_atual = servico_seguinte;
 }
 
+// Data Footer
+//current_year
+var data = new Date();
+var ano = data.getFullYear();
+document.getElementById("current_year").innerHTML = ano;
 
 
 
