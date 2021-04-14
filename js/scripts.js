@@ -89,10 +89,13 @@ var next = document.getElementById("service-next").onclick = function () {
 }
 
 // Data Footer
-//current_year
+
 var data = new Date();
 var ano = data.getFullYear();
 document.getElementById("current_year").innerHTML = ano;
+
+//current_year
+
 
 
 
